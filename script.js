@@ -92,7 +92,36 @@ console.log(arr);
 console.log("Максимальне: " + max);
 console.log("Мінімальне: " + min);
 
+// Заповнити двовимірний масив рандомними числами та знайти середне арафметичне
 
+var result = 0, a = 0, arr = [[],[]];
 
+for (var i = 0; i < 10; i++) {
+	for (var j = 0; j < 10; j++) {
+		arr[[i],[j]] = Math.round(Math.random() * 10, 1);
+		a += arr[[i],[j]];
+	};
+}
+result = a / 100;
+console.log(arr);
+console.log(result);
 
+// Заповнити двовимірний масив рандомними числами та знайти середне арафметичне
 
+var arr = [[],[]], max = 0, min = 11;
+
+for (var i = 0; i < 10; i++) {
+	for (var j = 0; j < 10; j++) {
+		arr[[i],[j]] = Math.round(Math.random() * 10, 1);
+		a += arr[[i],[j]];
+		if (arr[[i],[j]] > max) {
+			max = arr[[i],[j]];
+		};
+	if (arr[[i],[j]] < min) {
+			min = arr[[i],[j]];
+		};
+	};
+}
+console.log(arr);
+console.log("Максимальне: " + max);
+console.log("Мінімальне: " + min);
