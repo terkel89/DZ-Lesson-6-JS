@@ -2,7 +2,7 @@
 var a, b, c, c, D, x, x1, x2;
 
 
-a = -4;
+a = 4;
 b = 3;
 c = 1
 console.log("Медот через if")
@@ -24,9 +24,11 @@ else {
 	x = "Error";
 console.log(x);
 }
+
+
 console.log("Медот через case")
 D = b*b-4*a*c;
-D = D / D;
+D = D / Math.abs(D);
 switch (D) {
 	case -1 :
 		x = "Error";
