@@ -63,9 +63,34 @@ for (var i = 2; i < 100; i++) {
 console.log("Сумма всіх простих чисел від 0 до 100: " + result);
 
 
+// Заповнити масив рандомними числами та знайти середне арафметичне
 
+var result = 0, a = 0, arr = [];
 
+for (var i = 0; i < 10; i++) {
+	arr[i] = Math.round(Math.random() * 10, 1);
+	a += arr[i];
+}
+result = a / 10;
+console.log(arr);
+console.log(result);
 
+// Заповнити масив рандомними числами та знайти максимальне та мінімальне значення
+
+var arr = [], max = 0, min = 11;
+
+for (var i = 0; i < 10; i++) {
+	arr[i] = Math.round(Math.random() * 10, 1);
+	if (arr[i] > max) {
+		max = arr[i];
+	};
+	if (arr[i] < min) {
+		min = arr[i];
+	};
+}
+console.log(arr);
+console.log("Максимальне: " + max);
+console.log("Мінімальне: " + min);
 
 
 
